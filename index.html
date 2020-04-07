@@ -25,35 +25,38 @@
     <!-- Leaflet CSS - For the map-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
     <link rel="icon" href="img/favicon.png" type="image/icon type">
-    <script>
+    <!-- <script>
       var myVar;
       
       function myFunction() {
+        
         myVar = setTimeout(showPage, 3000);
       }
       
       function showPage() {
         document.getElementById("loader").style.display = "none";
-        document.getElementById("myDiv").style.display = "block";
+        
         document.body.style.backgroundColor = "white";
+        document.getElementsByClassName("header").style.display="block";
+        document.getElementById("intro").style.display="block";
       }
-      </script>
+      </script> -->
    
   </head>
-  <body onload="myFunction()" style="background: black;"> 
+  <body > 
     <!-- Reference item-->
 
     <!-- navbar-->
-    <div id="loader">
+    <!-- <div id="loader">
     <h1 style="font-size: 100px; ">LOADING..</h1>
 
 
-    </div>
+    </div> -->
 
 
 
-    <div id="myDiv" style="display:none;">
-    <header class="header">
+    <!-- <div id="myDiv" style="display:none;"> -->
+    <header class="header" >
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container"><a href="#intro" class="navbar-brand scrollTo">My profile</a>
           <button type="button" data-toggle="collapse" data-target="#navbarcollapse" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" class="navbar-toggler navbar-toggler-right"><span class="fa fa-bars"></span></button>
@@ -339,6 +342,6 @@
     <script src="js/front.js"></script>
   
   
-  </div>
+  <!-- </div> -->
   </body>
 </html>

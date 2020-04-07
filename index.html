@@ -30,7 +30,10 @@
   </head>
   <body> 
    
-
+    <div class="spinner-wrapper">
+      <div class="spinner"></div>
+      <h1>Loading</h1>
+      </div>
     
     <header class="header" >
       <nav class="navbar navbar-expand-lg fixed-top">
@@ -319,7 +322,17 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
     <script src="js/front.js"></script>
   
-  
+    <script>
+      $(document).ready(function() {
+      //Preloader
+      preloaderFadeOutTime = 5000;
+      function hidePreloader() {
+      var preloader = $('.spinner-wrapper');
+      preloader.fadeOut(preloaderFadeOutTime);
+      }
+      hidePreloader();
+      });
+      </script>
   <!-- </div> -->
   </body>
 </html>

@@ -41,7 +41,7 @@
     
     position: absolute;
     top: 60%;
-    left: 40%;
+    left: 35%;
     font-size: 100px;
     color: transparent;
     -webkit-text-stroke: 1px blue;
@@ -120,11 +120,16 @@ transform: translateY(0px);
 @media only screen and (max-width: 600px) {
    *{width: 100%;
 } 
+.spinner-wrapper h1{
+  font-size: 40px;
+  left: 25%;
+
+}
 }
 
 
  @media (max-width:700px){
-    #intro h1{
+  .spinner-wrapper h1{
         font-size: 40px;
         
     }

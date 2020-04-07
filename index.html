@@ -25,11 +25,34 @@
     <!-- Leaflet CSS - For the map-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.css">
     <link rel="icon" href="img/favicon.png" type="image/icon type">
+    <script>
+      var myVar;
+      
+      function myFunction() {
+        myVar = setTimeout(showPage, 3000);
+      }
+      
+      function showPage() {
+        document.getElementById("loader").style.display = "none";
+        document.getElementById("myDiv").style.display = "block";
+        document.body.style.backgroundColor = "white";
+      }
+      </script>
    
   </head>
-  <body>
+  <body onload="myFunction()" style="background: black;"> 
     <!-- Reference item-->
+
     <!-- navbar-->
+    <div id="loader">
+    <h1 style="font-size: 100px; ">LOADING..</h1>
+
+
+    </div>
+
+
+
+    <div id="myDiv" style="display:none;">
     <header class="header">
       <nav class="navbar navbar-expand-lg fixed-top">
         <div class="container"><a href="#intro" class="navbar-brand scrollTo">My profile</a>
@@ -70,12 +93,12 @@
               I am a first year student at CEG-Anna university pursuing BTech Information Technology.</p>
               <p>I love to work with computers and anything related to it. Since the lockdown I am in front of my laptop for >10hrs/day :D. 
                 I know intermeditate C++ and python.
-                I also have interest in competetive programming and I'm active on hackerrank, codechef and codeforces.
+                I also have interest in competetive programming and I'm active on <strong>hackerrank, codechef and codeforces.</strong>
                 We had basic web development in this semester, still I'm a beginner but I found it interesting an decided to dig a bit deeper in it.
-                I started exploring bootrap and tried angular, but now I'm focusing on NodeJs with express. I also work on wordpress development.</p>
-              <p>This may not be the case with most people, I have tried linux but still I'm a Windows lover, but I run linux too on dual boot.
+                I started exploring bootrap and tried angular, but now I'm focusing on <strong> with express.</strong> I also work on wordpress development.</p>
+              <p>This may not be the case with most people, I have tried linux but still I'm a <strong>Windows lover</strong>, but I run linux too on dual boot.
               Apart from computers and coding, I spend most of my time on youtube. I'm not much into gaming, I play badminton and watch a lot of series. 
-              My favourite ones are Silicon valley and money heist.
+              My favourite ones are <strong>Silicon valley and money heist.</strong>
               
              
 
@@ -314,5 +337,8 @@
     <script src="vendor/jquery.counterup/jquery.counterup.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/1.4.0/leaflet.js"> </script>
     <script src="js/front.js"></script>
+  
+  
+  </div>
   </body>
 </html>

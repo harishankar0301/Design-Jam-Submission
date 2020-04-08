@@ -117,24 +117,26 @@ transform: translateY(0px);
     background-position: 2000px 0;
 }
 }
-@media only screen and (max-width: 600px) {
-   *{width: 100%;
-} 
+
+
+.tech .card{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
+}
+@media only screen and (max-width: 600px){
+
+  html,body
+{
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
 .spinner-wrapper h1{
   font-size: 40px;
   left: 25%;
 
+} 
+#intro h1{
+  font-size: 30px;
 }
-}
-
-
- @media (max-width:700px){
-  .spinner-wrapper h1{
-        font-size: 40px;
-        
-    }
-}
-
-.tech .card{
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19) !important;
 }

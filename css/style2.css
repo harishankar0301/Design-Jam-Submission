@@ -136,14 +136,12 @@ transform: translateY(0px);
   left: 25%;
 
 } 
-.node img{
-  margin-left: 53px;
-}
+
 #intro h1{
   font-size: 30px;
 }
 }
 
 .node img{
-  margin-left: 20px;
+  margin-left: 25px;
 }
